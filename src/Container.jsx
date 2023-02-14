@@ -1,10 +1,11 @@
-import { Header, Footer, Layout } from "./Widget";
+import { Header, Footer, Layout, Text } from "./Widget";
 
 const Container = () => {
   return (
     <div className="container">
       <Header />
       <Layout />
+      <Text />
       <Footer />
     </div>
   );
