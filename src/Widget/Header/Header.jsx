@@ -13,7 +13,7 @@ const Header = () => {
           <header className={styles.header}></header>
 
               <div className={styles.nav}>
-                  <a className={styles.a}>Movies</a>
+                  <a className={styles.a}>Movies</a> //changes
                   <a className={styles.a}>TV Shows</a>
                   <a className={styles.a}>Suggest me →</a>
               </div>
