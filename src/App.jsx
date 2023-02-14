@@ -1,8 +1,8 @@
 import Container from "./Container";
-
+import styles from './assets/styles/global.scss'
 function App() {
   return (
-    <div className="app">
+    <div className={styles.global}>
       <Container />
     </div>
   );
