@@ -1,9 +1,10 @@
-import { Header, Footer, Layout } from "./Widget";
+import { Header, Footer, Layout, Info } from "./Widget";
 
 const Container = () => {
   return (
     <div className="container">
       <Header />
+        <Info/>
       <Layout />
       <Footer />
     </div>

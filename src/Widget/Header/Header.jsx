@@ -13,9 +13,9 @@ const Header = () => {
           <header className={styles.header}></header>
 
               <div className={styles.nav}>
-                  <p>Movies</p>
-                  <p>TV Shows</p>
-                  <p>Suggest me →</p>
+                  <a>Movies</a>
+                  <a>TV Shows</a>
+                  <a>Suggest me →</a>
               </div>
 
 
