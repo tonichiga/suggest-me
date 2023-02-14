@@ -1,48 +1,47 @@
 .position{
     display: flex;
     margin-left: 125px ;
-    margin-top: 60px;
+    margin-top: 40px;
     background-color: black;
-    opacity: 50%;  /*opacity*/
-    padding: 20px;
-    margin-right: 713px;
+      /*opacity ...*/
+    padding: 12px;
+   margin-right: 713px;
     border-radius: 10px;
 }
 
 button{
-    /*padding: 20px; !* first button looks bad*!*/
-    /*width: 90px;*/
-    /*height: 40px;*/
-    /*background-color: rgba(0, 0, 0, 0.2);*/
-    /*border: 2px  rgba(0, 0, 0, 0.2);*/
-    /*border-radius: 5px;*/
-    /*margin: 10px;*/
-
     cursor: pointer;
     padding: 10px 20px;
     border-radius: 5px;
-    opacity: 50%;  /* opacity */
+    /*opacity: 50%;  !* opacity *!*/
     border: none;
-    background-color: lightgray;
-    color: white;
+    /*background-color: lightgray;*/
+    /*color: white;*/
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 10px;
+    opacity: 40%;
 }
 
-.button button:active {
-    color: #7B6EF6;
+.button button:focus {
+    /*box-shadow: 2px 2px 5px #aba1e5;*/
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #7B6EF6;
+    /*color: #7B6EF6;*/
     background-color: #7B6EF6;
-    box-shadow: 2px 2px 5px #fc894d;
+    opacity: 1;
+
 }
 
 
-.button button:active {
-    background-color: #7B6EF6;
-    transition: 3s;
-}
+/*.button button:active {*/
+/*    background-color: #7B6EF6;*/
+/*    transition: 3s;*/
+/*}*/
 
 
 .background{
