@@ -2,8 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
-    url(../../assets/images/background.jpeg);
+  background-color: #121829;
+  background-image: url(../../assets/images/background-2.png);
+  backdrop-filter: blur(20px);
+  //   background: linear-gradient(0deg, #121829, #121829),
+  //     url(../../assets/images/background-2.png);
   padding-top: 103px;
   padding-bottom: 56px;
 }
