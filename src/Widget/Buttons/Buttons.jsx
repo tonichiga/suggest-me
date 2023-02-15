@@ -4,7 +4,7 @@ function Buttons() {
     return (
         <div className={styles.position}>
             <div className={styles.button}>
-                <button >Any</button>
+                <button>Any</button>
                 <button>Action</button>
                 <button>Horror</button>
                 <button>Drama</button>
