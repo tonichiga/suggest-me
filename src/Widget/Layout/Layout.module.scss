@@ -1,12 +1,20 @@
 .layout {
-  display: grid;
+    display: flex;
+    flex-direction: column;
+    padding:160px 158px 0px 158px;
+    background-color: #121829;
+    background-image: url(../../assets/images/Background.svg);
+    backdrop-filter: blur(20px);
+    min-height: 800px;
+    
+    /*display: grid;
   grid-template-columns: repeat(auto-fit, minmax(282px, 282px));
   justify-content: center;
   gap: 24px;
   max-width: 1200px;
   padding-top: 100px;
   padding-bottom: 100px;
-  margin: 0 auto;
+  margin: 0 auto;*/
 }
 
 // .layout {

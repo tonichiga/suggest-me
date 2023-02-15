@@ -1,7 +1,10 @@
-import { Card } from "../";
+//import { Card } from "../";
 import styles from "./Layout.module.scss";
+import Title from "../../Components/UI/Title/Title";
+import Input from "../../Components/UI/Input/Input";
 
-const arrayGenerator = (length) => {
+
+/*const arrayGenerator = (length) => {
   let array = [];
   for (let i = 1; i <= length; i++) {
     array.push(i);
@@ -12,13 +15,17 @@ const arrayGenerator = (length) => {
 const Layout = () => {
   const mockData = arrayGenerator(10);
 
-  return (
+    return (
     <div className={styles.layout}>
       {mockData.map((element) => {
         return <Card data={element} />;
       })}
     </div>
   );
-};
+};*/
+
+const Layout = () => {
+    return <div className={styles.layout}><Title /><Input/></div>
+}
 
 export default Layout;

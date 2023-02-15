@@ -5,7 +5,7 @@ const Container = () => {
     <div className="container">
       <Header />
       <Layout />
-      <Footer />
+      {/*<Footer />*/}
     </div>
   );
 };
