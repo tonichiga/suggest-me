@@ -1,0 +1,38 @@
+.navbar {
+  &.navbar_2 {
+  }
+
+  & a {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-right: 84px;
+    text-decoration: none;
+  }
+
+  & a:first-child {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 1px;
+      width: 100%;
+      background-color: #ff6b08;
+    }
+  }
+}
+
+// .element {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   width: 200px;
+//   height: 200px;
+//   transform: translate(-50%, -50%);
+// }

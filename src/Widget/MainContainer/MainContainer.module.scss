@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
+    url(../../assets/images/background.jpeg);
+  padding-top: 103px;
+  padding-bottom: 56px;
+}
+
+.content {
+  max-width: 1186px;
+}
+
+.title_wrapper {
+  margin-bottom: 53px;
+}
+
+.content_head {
+  margin-bottom: 54px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}

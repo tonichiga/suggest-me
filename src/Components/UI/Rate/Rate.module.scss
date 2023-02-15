@@ -1,0 +1,25 @@
+.rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ff6b01;
+  border-radius: 5px;
+  height: 20px;
+  padding-left: 5px;
+  padding-right: 6px;
+
+  & > img {
+    width: 11px;
+    height: 11px;
+  }
+
+  & span {
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-left: 6px;
+  }
+}

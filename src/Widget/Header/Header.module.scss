@@ -2,10 +2,11 @@
   position: fixed;
   top: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 80px;
   width: 100%;
-  background-color: #ccc;
+  background-color: #000000;
   z-index: 1;
+  padding: 0 127px;
 }
