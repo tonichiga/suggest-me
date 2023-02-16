@@ -1,16 +1,25 @@
 .card {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: teal;
+  flex-direction: column;
+  align-items: flex-start;
   width: 282px;
   height: 480px;
-  border-radius: 8px;
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.8);
-  transition: 150ms ease-in-out;
+  background: rgba(32, 40, 62, 0.8);
+  backdrop-filter: blur(40px);
+  border-radius: 12px;
+  padding: 8px 8px 16px;
+  gap: 24px;
   cursor: pointer;
+  font-family: "Poppins_400";
+  color: #EBEEF5;
 
   &:hover {
     transform: scale(1.03);
+  }
+
+  & .image {
+    height: 400px;
+    width: 100%;
+    border-radius: 12px;
   }
 }

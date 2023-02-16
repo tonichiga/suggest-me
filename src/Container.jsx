@@ -1,9 +1,10 @@
-import { Header, MainCont} from "./Widget";
+import { Header } from "./Widget";
+import MainCont from "./Widget/MainCont/MainCont";
 
 const Container = () => {
   return (
     <div className="container">
-      <Header />
+        <Header />
         <MainCont />
     </div>
   );
