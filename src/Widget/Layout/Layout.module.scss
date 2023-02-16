@@ -5,8 +5,16 @@
     background-color: #121829;
     background-image: url(../../assets/images/Background.svg);
     backdrop-filter: blur(20px);
-    min-height: 800px;
+    min-height: 1000px;
+    padding-bottom:100px;
     
+    .card_wrapper{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:flex-start;
+        gap:24px;
+        width:100%;
+    }
     /*display: grid;
   grid-template-columns: repeat(auto-fit, minmax(282px, 282px));
   justify-content: center;

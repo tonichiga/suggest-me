@@ -1,0 +1,25 @@
+.card_block {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(32, 40, 62, 0.8);
+    backdrop-filter: blur(40px);
+    border-radius: 12px;
+    width: 282px;
+    height: 480px;
+    padding: 0px 8px 12px;
+    gap: 16px;
+
+    img {
+        border-radius: 8px;
+        width:100%;
+        align-self: center;
+    }
+
+    p {
+        font-size: 16px;
+        color: whitesmoke;
+        margin: 10px;
+    }
+}

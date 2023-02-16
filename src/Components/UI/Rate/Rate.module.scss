@@ -1,0 +1,29 @@
+.rate_block {
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(4px);
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    left: 16px;
+    top: 18px;
+    padding: 4px 8px;
+    gap: 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+
+    img {
+        margin-top:1px;
+        width: 16.33px;
+        height: 16.23px;
+    }
+
+    p {
+        font-size: 16px;
+        color: #FFAD49;
+        text-align: left;
+        margin:0px;
+    }
+}
