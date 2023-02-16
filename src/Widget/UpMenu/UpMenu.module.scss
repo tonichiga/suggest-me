@@ -1,0 +1,12 @@
+.navbar {
+    position: absolute;
+    right: 102px;
+
+    & a {
+        margin-right:25px;
+        text-decoration: none;
+        color: white;
+        font-weight:400;
+        font-size:18px;
+    }
+}
