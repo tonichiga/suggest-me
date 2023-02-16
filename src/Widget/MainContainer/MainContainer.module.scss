@@ -1,6 +1,9 @@
 .main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     background-color: #121829;
     background-image: url(../../assets/img/Background.png);
     backdrop-filter: blur(20px);
@@ -78,4 +81,9 @@
 
 .content {
     max-width: 1200px;
+}
+
+.main_footer {
+     display: flex;
+     flex-direction: column;
 }
