@@ -8,6 +8,7 @@
     padding-bottom: 56px;
     padding-left: 125px;
     padding-right: 125px;
+    background-size: cover;
 }
 
 .main_header {
@@ -73,4 +74,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+.content {
+    max-width: 1200px;
 }

@@ -49,6 +49,7 @@ const data = [
 
 const MainContainer = () => {
     return <div className={s.main}>
+      <div className={s.content}>
                 <div className={s.main_header}>
                     <h1>Suggest.me</h1>
                     <span>Discover new and exciting movies with Suggest.me! 
@@ -79,6 +80,7 @@ const MainContainer = () => {
                     <h3 className={s.footer}>Didin’t find the one you looking for?</h3>
                     <ButtonMain />
                 </div>
+            </div>
             </div>
         </div>;
 }
