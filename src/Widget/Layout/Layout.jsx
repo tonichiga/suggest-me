@@ -88,21 +88,23 @@ const data = [
 ];
 
 const Layout = () => {
-    return <div className={styles.layout}>
-                <Title />
-                <Input />
-                <TextGenre />
-                <div className={styles.card_wrapper}>
-                    {data.map((item) => {
-                        return (
-                            <div key={item.id}>
-                                <Card data={item} />
-                            </div>
-                        );
-                    })}
+    return <div className={styles.layout_wrapper}>
+                 <div className={styles.layout_block}>
+                    <Title />
+                    <Input />
+                    <TextGenre />
+                    <div className={styles.card_wrapper}>
+                        {data.map((item) => {
+                            return (
+                                <div key={item.id}>
+                                    <Card data={item} />
+                                </div>
+                            );
+                        })}
+                    </div>
+                    <QuestionSearch />
+                    <PurpleButton/>
                 </div>
-        <QuestionSearch />
-        <PurpleButton/>
         </div>
 }
 
