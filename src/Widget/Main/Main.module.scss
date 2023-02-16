@@ -1,4 +1,31 @@
 .MainContainer {
     background-image: url(../../assets/Images/Background.png);
     background-color: #121829;
+    justify-content:center;
+}
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+p {
+    color: #767E94;
+    text-align: center;
+    margin-top:50px;
+}
+.LastButton {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 64px;
+}
+
+.LastMessage {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #767E94;
 }

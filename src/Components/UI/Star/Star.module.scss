@@ -1,0 +1,25 @@
+.rate {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: black;
+    backdrop-filter: blur(4px);
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 8px;
+    height: 40px;
+
+    & > img {
+        width: 13px;
+        height: 13px;
+    }
+
+    & .rating {
+        display: block;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFAD49;
+        margin-left: 6px;
+    }
+}
