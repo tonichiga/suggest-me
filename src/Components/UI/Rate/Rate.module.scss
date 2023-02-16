@@ -7,7 +7,7 @@
     left: 16px;
     top: 18px;
     padding: 4px 8px;
-    gap: 3px;
+    gap: 6px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -15,15 +15,21 @@
     border-radius: 8px;
 
     img {
-        margin-top:1px;
+        margin-top: 1px;
         width: 16.33px;
         height: 16.23px;
+        cursor: pointer;
+        transition: 0.2s all linear;
+
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 
     p {
         font-size: 16px;
         color: #FFAD49;
         text-align: left;
-        margin:0px;
+        margin: 0px;
     }
 }
