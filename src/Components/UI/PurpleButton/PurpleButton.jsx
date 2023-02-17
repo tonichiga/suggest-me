@@ -1,4 +1,4 @@
-import s from "./PurpleButton.module.scss";
+import s from "PurpleButton.scss";
 
 const PurpleButton = () => {
     return <button className={s.button}>Suggest more</button>;
