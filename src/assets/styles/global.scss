@@ -1,6 +1,13 @@
-.global{
-    background-color: #121829;
-    background-image: url(../../assets/images/image.png);
-    backdrop-filter: blur(20px);
-    width: 100%;
+h1,
+p,
+ul {
+    padding: 0;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
 }

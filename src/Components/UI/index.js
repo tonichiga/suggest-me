@@ -1,0 +1,1 @@
+export {default as DetailsTitle}  from './DetailsTitle/Details'
