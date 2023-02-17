@@ -1,0 +1,13 @@
+.container{
+    background-image: url(../../assets/background/Background.svg);
+    backdrop-filter: blur(20px);
+    background-color: #121829;
+    padding-left: 120px;
+}
+.content{
+    max-width: 1184px;
+    display: flex;
+}
+.content_w{
+    margin-bottom: 72px;
+}

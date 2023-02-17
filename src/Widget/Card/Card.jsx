@@ -1,7 +1,12 @@
-import style from "./Card.module.scss";
+import s from "./Card.module.scss";
+import Rate from "../../Components/Rate/Rate";
 
-const Card = ({ data }) => {
-  return <div className={style.card}>Card movie number {data}</div>;
-};
+const Card = ({data}) => {
+    return <div className={s.card_block}>
+        <img src={data.background} alt="Card_photo" />
+        <p>{data.title}</p>
+        <Rate rate={data.rate} />
+           </div>
+}
 
 export default Card;

@@ -1,11 +1,13 @@
-import { Header, Footer, Layout } from "./Widget";
+import { Header } from "./Widget";
+import Layout from "./Widget/Layout/Layout";
+import MainCont from "./Widget/MainCont/MainCont";
 
 const Container = () => {
   return (
     <div className="container">
-      <Header />
-      <Layout />
-      <Footer />
+      <Header /> 
+      <MainCont/>
+      {/* <Layout/> */}
     </div>
   );
 };

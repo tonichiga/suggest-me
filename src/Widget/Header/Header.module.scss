@@ -1,11 +1,13 @@
 .header {
+  padding: 0px 150px 0px 120px;
   position: fixed;
   top: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 80px;
   width: 100%;
-  background-color: #ccc;
+  background: rgba(18, 24, 41, 0.8);
+  backdrop-filter: blur(20px);
   z-index: 1;
 }
