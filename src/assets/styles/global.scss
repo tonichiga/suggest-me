@@ -17,3 +17,10 @@ ul {
 li {
  list-style: none;
 }
+
+.container {
+    background-color: #121829;
+    background-image: url(../../assets/img/Background.png);
+    backdrop-filter: blur(20px);
+    background-size: cover;
+}
