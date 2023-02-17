@@ -11,13 +11,13 @@ const arrayGenerator = (length) => {
   return array;
 };
 
-const Layout = () => {
+const Layout = ({data}) => {
   const mockData = arrayGenerator(10);
 
   return (
     <div className={styles.layout}>
       {mockData.map((element) => {
-        return <Card data={element} />;
+        return <Card data={element}  />;
       })}
     </div>
   );

@@ -1,0 +1,29 @@
+.container {
+    background-color: #121829;
+    background-image: url(../../assets/images/image.png);
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.content {
+    max-width: 1186px;
+}
+
+.title_wrapper {
+    margin-bottom: 53px;
+}
+
+.content_head {
+    margin-bottom: 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}

@@ -1,5 +1,11 @@
 .position {
+    position: relative;
+    top:30px;
     margin-left: 125px ;
+    width: 100vh;
+    /*background-image: url(../../assets/images/image.png);*/
+    /*backdrop-filter: blur(20px);*/
+    width: 100%;
 }
 .h1 {
     font-style: normal;

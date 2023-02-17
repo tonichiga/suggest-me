@@ -1,14 +1,29 @@
 import React from 'react';
-import styles from './Buttons.module.css'
+import s from './Inputs.module.scss'
 function Buttons() {
     return (
-        <div className={styles.position}>
-            <div className={styles.button}>
-                <button>Any</button>
-                <button>Action</button>
-                <button>Horror</button>
-                <button>Drama</button>
-                <button>Comedy</button>
+        <div className={s.input_wrapper}>
+            <div className={s.content}>
+                <div className={s.input_container}>
+                    <input name="category" defaultChecked id="any" type="radio" />
+                    <label htmlFor="any">Any</label>
+                </div>
+                <div className={s.input_container}>
+                    <input name="category" id="action" type="radio" />
+                    <label htmlFor="action">Action</label>
+                </div>
+                <div className={s.input_container}>
+                    <input name="category" id="horror" type="radio" />
+                    <label htmlFor="horror">Horror</label>
+                </div>
+                <div className={s.input_container}>
+                    <input name="category" id="drama" type="radio" />
+                    <label htmlFor="drama">Drama</label>
+                </div>
+                <div className={s.input_container}>
+                    <input name="category" id="comedy" type="radio" />
+                    <label htmlFor="comedy">Comedy</label>
+                </div>
             </div>
         </div>
     );
