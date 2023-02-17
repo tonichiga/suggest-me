@@ -6,9 +6,10 @@ const Container = () => {
     <div className={global.global}>
         <div className="our-container">
       <Header />
-        <Info/>
-        <Buttons/>
-      <Layout />
+            <MainContainer/>
+        {/*<Info/>*/}
+        {/*<Buttons/>*/}
+      {/*<Layout />*/}
       <Footer />
     </div>
     </div>

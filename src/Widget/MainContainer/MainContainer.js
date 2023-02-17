@@ -46,6 +46,11 @@ const data = [
         title: "Two And a Half Men",
         rate: 7.4,
     },
+    // {
+    //     id: 9,
+    //     title: "Hi",
+    //     rate: 1.4,
+    // },
 ];
 
 // function MainContainer(props) {
