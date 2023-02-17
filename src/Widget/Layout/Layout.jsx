@@ -4,7 +4,7 @@ import Input from "../../Components/UI/Input/Input";
 import TextGenre from "../../Components/TextGenre/TextGenre";
 import Card from "../Card/Card";
 import QuestionSearch from "../../Components/UI/QuestionSearch/QuestionSearch";
-import PurpleButton from "../../Components/UI/PurpleButton"; 
+import PurpleButton from "../../Components/UI/PurpleButton/PurpleButton"; 
 
 import WidowImage from "../../assets/images/BlackW.jpg";
 import LokiImage from "../../assets/images/Loki.jpg";

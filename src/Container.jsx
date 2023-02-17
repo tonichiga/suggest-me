@@ -7,7 +7,7 @@ const Container = () => {
     <div className="container">
       <Header /> 
       <MainCont/>
-      {/* <Layout/> */}
+      <Layout/>
     </div>
   );
 };
