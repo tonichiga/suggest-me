@@ -23,4 +23,9 @@ li {
     background-image: url(../../assets/img/Background.png);
     backdrop-filter: blur(20px);
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
