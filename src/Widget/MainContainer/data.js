@@ -16,7 +16,7 @@ const data = [
     {
         id: 2,
         title: "Shang Chi",
-        rate: 9,
+        rate: 9.1,
         img: sc,
     },
     {
@@ -35,21 +35,21 @@ const data = [
     {
         id: 5,
         title: "Money Heist",
-        rate: 7,
+        rate: 7.2,
         img: mh,
 
     },
     {
         id: 6,
         title: "Friends",
-        rate: 9,
+        rate: 8.1,
         img: f,
 
     },
     {
         id: 7,
         title: "The Big Bang Theory",
-        rate: 6.5,
+        rate: 6.8,
         img: tb,
 
     },

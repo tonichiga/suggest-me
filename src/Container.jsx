@@ -8,7 +8,7 @@ const Container = () => {
   return (
     <div className={global.global}>
         <div className="our-container">
-      <Header />
+            <Header />
             {/*<Home/>*/}
             <MainContainer/>
 

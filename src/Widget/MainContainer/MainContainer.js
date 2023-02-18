@@ -8,15 +8,6 @@ import data from './data'
 import Footer from "../Footer/Footer";
 
 
-// function MainContainer(props) {
-//     return (
-//         <div className={s.main}>
-//             <Header/>
-//             <Info />
-//             <Buttons/>
-//         </div>
-//     );
-// }
 
 const MainContainer = () => {
     return (
@@ -28,6 +19,7 @@ const MainContainer = () => {
                     </div>
                     <Buttons />
                 </div>
+                <span className={s.any}>Any(120)</span>
                 <ul className={s.list} >
                     {data.map((item) => {
                         return (
