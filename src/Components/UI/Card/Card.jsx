@@ -6,7 +6,9 @@ const Card = ({data}) => {
     return <div className={styles.card_block}>
         <img src={data.background} alt="Card_photo" />
         <p>{data.title}</p>
-        <Rate rate={data.rate} />
+        <div className={styles.rate_style}>
+                <Rate rate={data.rate} />
+            </div>
            </div>
 }
 
