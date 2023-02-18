@@ -1,7 +1,7 @@
-import s from "./Main.module.scss";
-import Info from "../Info/Info";
-import InputRadio from "../InputRadio/InputRadio";
-import Card from "../Card/Card";
+import s from "./Home.module.scss";
+import Info from "../../Widget/Info/Info";
+import InputRadio from "../../Widget/InputRadio/InputRadio";
+import Card from "../../Widget/Card/Card";
 import Button from "../../Components/UI/Button/Button";
 import Text from "../../Components/UI/Text/Text";
 
@@ -72,7 +72,7 @@ const data = [
     },
 ];
 
-const Main = () => {
+const Home = () => {
     return (
         <div className={s.MainContainer}>
             <Info />
@@ -96,4 +96,4 @@ const Main = () => {
 
     )
 };
-export default Main;
+export default Home;

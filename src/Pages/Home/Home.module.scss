@@ -1,19 +1,22 @@
 .MainContainer {
-    background-image: url(../../assets/Images/Background.png);
-    background-color: #121829;
-    justify-content:center;
+        background-image: url(../../assets/Images/Background.png);
+        background-color: #121829;
+        justify-content: center;
 }
+
 .list {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    justify-content:center;
+    justify-content: center;
 }
+
 p {
     color: #767E94;
     text-align: center;
-    margin-top:50px;
+    margin-top: 50px;
 }
+
 .LastButton {
     display: flex;
     align-content: center;

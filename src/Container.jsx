@@ -1,12 +1,12 @@
-import { Header, Layout } from "./Widget";
-import Main from "./Widget/Main/Main";
+import { Details, Home } from "./Pages";
+import { Header} from "./Widget";
 
 
 const Container = () => {
   return (
     <div className="container">
           <Header />
-          <Main />
+          <Details />
     </div>
   );
 };
