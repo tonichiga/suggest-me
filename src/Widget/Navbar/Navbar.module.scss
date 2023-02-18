@@ -5,6 +5,9 @@ li {
   list-style: none;
   display: flex;
 }
+.suggest {
+  margin-left: 16px;
+}
 a{
   color:#A8AEBF;
   text-decoration: none;
@@ -12,5 +15,5 @@ a{
 nav{
   display: flex;
   width: 30%;
-  gap:15px;
+  gap:48px;
 }

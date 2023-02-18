@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav>
         <li><a href="#">Movies</a></li>
         <li><a href="#">TV Shows</a></li>
-        <li><a href="#">Suggest me</a>
+        <li className={styles.suggest}><a href="#">Suggest me</a>
             <img className={styles.arrowRight} src={arrowRight} alt="arrowRight"/>
         </li>
     </nav>
