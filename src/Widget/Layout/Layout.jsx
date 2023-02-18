@@ -69,9 +69,9 @@ const data = [
 const Layout = () => {
     return <div className={s.layout_wrapper}>
                  <div className={s.layout_block}>
-                    <HeadTitle/>
+                    {/* <HeadTitle/>
                     <Input/>
-                    <TextGenre />
+                    <TextGenre /> */}
                     <div className={s.card_wrapper}>
                         {data.map((item) => {
                             return (

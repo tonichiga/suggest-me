@@ -3,7 +3,17 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-h1 , p {
+h1 , 
+ p,
+ ul {
     margin: 0;
 
+}
+
+ul{
+    padding: 0;
+}
+
+li {
+    list-style: none;
 }
