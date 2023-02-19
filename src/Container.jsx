@@ -1,13 +1,15 @@
+// import Home from "./Pages/Home/Home";
 import { Header } from "./Widget";
+import {Details} from "./Pages";
 
-import MainCont from "./Widget/MainCont/MainCont";
+
 
 const Container = () => {
   return (
     <div className="container">
       <Header /> 
-      <MainCont/>
-     
+      {/* <Home/> */}
+     <Details/>
     </div>
   );
 };

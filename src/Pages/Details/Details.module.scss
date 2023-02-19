@@ -1,0 +1,53 @@
+.main {
+    padding: 120px;
+    max-width: 1400px;
+    
+}
+
+.about_film {
+    width: 100%;
+
+    & > img {
+        width: 480px;
+        height: 720px;
+        border-radius: 24px;
+    }
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    width: 100%;
+}
+
+.detail_block {
+    max-width: 480px;
+    
+    text-align: left;
+
+}
+
+.title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.015em;
+    color: #EBEEF5;
+    margin-bottom: 24px;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #8E95A9;
+    margin-bottom: 24px;
+}
+
+.about_list {
+    & > div:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }

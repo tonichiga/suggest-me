@@ -17,3 +17,12 @@ ul{
 li {
     list-style: none;
 }
+.container{
+        background-image: url(../../assets/background/Background.svg);
+        backdrop-filter: blur(20px);
+        background-color: #121829;
+        background-size: cover;
+        display: flex;
+    justify-content: center;
+
+    }

@@ -1,4 +1,4 @@
-import styles from "./Header.module.scss";
+import s from "./Header.module.scss";
 import Logo from "../Logo/Logo";
 import Navbar from "../Navbar/Navbar";
 
@@ -7,7 +7,7 @@ import Navbar from "../Navbar/Navbar";
 
 
 const Header = () => {
-  return <header className={styles.header}>
+  return <header className={s.header}>
     <Logo/>
     <Navbar/>
   </header>;
