@@ -4,11 +4,11 @@
   max-width: 480px;
 
   & > span:first-child {
-    font-family: "Poppins_400";
-    font-size: 16px;
-    line-height: 32px;
-    color: #767e94;
-    margin-right: 8px;
+    font-family: "Poppins_600";
+    font-weight: 700;
+    font-size: 24px;
+    color: #EBEEF5;
+    padding-bottom: 24px;
   }
 }
 
@@ -16,5 +16,6 @@
   font-family: "Poppins_400";
   font-size: 16px;
   line-height: 32px;
-  color: #c3c8d4;
+  color: #767e94;
+  margin-right: 8px;
 }

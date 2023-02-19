@@ -3,6 +3,7 @@ import Card from "../Card/Card";
 import Title from "../Title/Title";
 import Input from "../Input/Input";
 import DetailsProp from "../../Components/UI/DetailsProp/DetailsProp"
+import ReversDetailsProp from "../../Components/UI/ReversDetailsProp/ReversDetailsProp"
 
 import BlackWidow from "../../assets/images/BlackWidow.jpg"
 import ShangChi from "../../assets/images/ShangChi.jpg"
@@ -107,6 +108,7 @@ const MainCont = () => {
                         <img className={style.film_image} src={SmallAve} alt="SmallAve"/>
                     </div>
                     <div className={style.prop_list}>
+                        <ReversDetailsProp label={"Part of the journey is the end."} value={"After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store."} />
                         <DetailsProp isRate={true} label={"Rate"} value={"7.8"} />
                         <DetailsProp label={"Type"} value={"Movie"} />
                         <DetailsProp label={"Release Date"} value={"2019-04-24"} />

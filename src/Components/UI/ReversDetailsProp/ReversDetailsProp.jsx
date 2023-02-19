@@ -1,7 +1,7 @@
 import { Rate } from "../";
-import style from "./DetailsProp.module.scss";
+import style from "./ReversDetailsProp.module.scss";
 
-const ReversDetailsProps = ({ isRate, label, value }) => {
+const DetailsProps = ({ isRate, label, value }) => {
     return (
         <div className={style.detail_prop}>
             <span>{label}</span>
@@ -10,4 +10,4 @@ const ReversDetailsProps = ({ isRate, label, value }) => {
     );
 };
 
-export default ReversDetailsProps;
+export default DetailsProps;
