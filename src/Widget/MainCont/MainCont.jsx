@@ -2,6 +2,7 @@ import style from "./MainCont.module.scss";
 import Card from "../Card/Card";
 import Title from "../Title/Title";
 import Input from "../Input/Input";
+import DetailsProp from "../../Components/UI/DetailsProp/DetailsProp"
 
 import BlackWidow from "../../assets/images/BlackWidow.jpg"
 import ShangChi from "../../assets/images/ShangChi.jpg"
@@ -11,7 +12,8 @@ import MoneyHeist from "../../assets/images/MoneyHeist.jpg"
 import Friends from "../../assets/images/Friends.jpg"
 import BigBang from "../../assets/images/BigBang.jpg"
 import TwoMen from "../../assets/images/TwoMen.jpg"
-
+import LargeAve from "../../assets/images/LargeAvengers.jpg"
+import SmallAve from "../../assets/images/SmallAvengers.jpg"
 
 const data = [
     {
@@ -67,25 +69,53 @@ const MainCont = () => {
     return (
         <div className={style.container}>
             <div className={style.content}>
-                <Title />
-                <div className={style.input_checker}>
-                    <Input />
+                {/*<Title />*/}
+                {/*<div className={style.input_checker}>*/}
+                {/*    <Input />*/}
+                {/*</div>*/}
+                {/*<div className={style.list_info}>*/}
+                {/*    Any <span>(120)</span>*/}
+                {/*</div>*/}
+                {/*<ul className={style.list}>*/}
+                {/*    {data.map((item) => {*/}
+                {/*        return (*/}
+                {/*            <li key={item.id}>*/}
+                {/*                <Card data={item} />*/}
+                {/*            </li>*/}
+                {/*        );*/}
+                {/*    })}*/}
+                {/*</ul>*/}
+                {/*<div className={style.bottom}>*/}
+                {/*    <div>Didin’t find the one you looking for?</div>*/}
+                {/*    <button>Suggest more</button>*/}
+                {/*</div>*/}
+
+
+                <div>
+                    <img className={style.large_image} src={LargeAve} alt="Large"/>
+                    <div className={style.title_box}>
+                        <div className={style.title_genre}>
+                            Actions
+                        </div>
+                        <div className={style.title_name}>
+                            Avengers: Endgame
+                        </div>
+                    </div>
                 </div>
-                <div className={style.list_info}>
-                    Any <span>(120)</span>
-                </div>
-                <ul className={style.list}>
-                    {data.map((item) => {
-                        return (
-                            <li key={item.id}>
-                                <Card data={item} />
-                            </li>
-                        );
-                    })}
-                </ul>
-                <div className={style.bottom}>
-                    <div>Didin’t find the one you looking for?</div>
-                    <button>Suggest more</button>
+                <div className={style.film_content}>
+                    <div>
+                        <img className={style.film_image} src={SmallAve} alt="SmallAve"/>
+                    </div>
+                    <div className={style.prop_list}>
+                        <DetailsProp isRate={true} label={"Rate"} value={"7.8"} />
+                        <DetailsProp label={"Type"} value={"Movie"} />
+                        <DetailsProp label={"Release Date"} value={"2019-04-24"} />
+                        <DetailsProp label={"Run time"} value={"181 min"} />
+                        <DetailsProp
+                            label={"Genres"}
+                            value={"Adventure,  Science Fiction, Action"}
+                        />
+                    </div>
                 </div>
             </div>
         </div>
