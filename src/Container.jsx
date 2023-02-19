@@ -9,9 +9,7 @@ const Container = () => {
         <div className="our-container">
             <Header />
             <Details/>
-            {/*<DetailsTitle/>*/}
             {/*<Home/>*/}
-            {/*<Footer />*/}
     </div>
     </div>
   );

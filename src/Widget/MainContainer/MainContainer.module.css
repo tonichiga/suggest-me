@@ -32,18 +32,17 @@
     flex-wrap: wrap;
     gap: 30px;
 }
-.any{
-    position: absolute;
-    width: 108px;
-    height: 40px;
-    left: 120px;
-    top: 552px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: -0.02em;
-    color: #767E94;
-    margin-left: 15px;
-}
+/*.any{*/
+/*    position: absolute;*/
+/*    width: 108px;*/
+/*    height: 40px;*/
+/*    left: 120px;*/
+/*    top: 552px;*/
+/*    !*font-family: 'Poppins', sans-serif;*!*/
+/*    font-weight: 300;*/
+/*    font-size: 32px;*/
+/*    line-height: 40px;*/
+/*    letter-spacing: -0.02em;*/
+/*    color: #767E94;*/
+/*    margin-left: 15px;*/
+/*}*/

@@ -19,7 +19,9 @@ const MainContainer = () => {
                     </div>
                     <Buttons />
                 </div>
-                <span className={s.any}>Any(120)</span>
+                <div className={s.any}>
+                    <span className={s.any}>Any(120)</span>
+                </div>
                 <ul className={s.list} >
                     {data.map((item) => {
                         return (

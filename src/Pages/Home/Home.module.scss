@@ -33,17 +33,50 @@
   gap: 30px;
 }
 .any{
+  max-width: 1200px;
   position: absolute;
   width: 108px;
   height: 40px;
   left: 120px;
   top: 552px;
-  font-family: 'Poppins', sans-serif;
+  //font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
-  line-height: 40px;
+  //line-height: 40px;
   letter-spacing: -0.02em;
   color: #767E94;
   margin-left: 15px;
 }
+
+@media only screen and (min-width: 1600px){
+  .any{
+    margin-left: 100px;
+  }
+
+}
+@media only screen and (min-width: 1700px){
+  .any{
+  margin-left: 140px;
+  }
+}
+
+@media only screen and (min-width: 1800px){
+  .any{
+    margin-left: 180px;
+  }
+}
+
+
+@media only screen and (min-width: 1900px){
+  .any{
+    margin-left: 240px;
+  }
+}
+
+@media only screen and (min-width: 2000px){
+  .any{
+    margin-left: 280px;
+  }
+}
+
