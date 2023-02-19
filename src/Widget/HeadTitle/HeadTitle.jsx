@@ -1,5 +1,8 @@
 import s from "./HeadTitle.module.scss" ;
 
+
+// Описание на главной странице, про сам сайт
+
 const HeadTitle = () => {
     return <div className={s.htitle_cont}>
         <h1 className={s.headline}>Suggest.me</h1>

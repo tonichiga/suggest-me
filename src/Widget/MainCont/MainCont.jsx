@@ -2,8 +2,7 @@ import HeadTitle from "../HeadTitle/HeadTitle";
 import s from "./MainCont.module.scss" ;
 import Input from "../../Components/UI/Input/Input";
 import Card from "../Card/Card";
-import QuestionSearch from "../../Components/UI/QuestionSearch/QuestionSearch";
-import PurpleButton from "../../Components/UI/PurpleButton/PurpleButton";
+
 
 
 import WidowImage from "../../assets/images/BlackW.jpg";
@@ -14,6 +13,9 @@ import HeistImage from "../../assets/images/Money.jpg";
 import FriendsImage from "../../assets/images/Friends.jpg";
 import BigBangImage from "../../assets/images/BigBang.jpg";
 import TwoMenImage from "../../assets/images/Two.jpg";
+
+
+// Название фильмов, их айди, название, картинка, рейтинг
 
 
 const data = [
@@ -73,12 +75,15 @@ const MainCont = () => {
             <div className={s.content}>
              <div className={s.content_h}>
                 <div className={s.content_w}>
+{/* / Описание сайта                    */}
             <HeadTitle/>
          </div>
+         {/* Выбор категории фильма */}
             <Input/>
             <div className={s.any}>
                     Any <span>(120)</span>
                 </div>
+                {/* карточки с фильмами */}
             <div className={s.card_wrapper}>
                         {data.map((item) => {
                             return (
@@ -91,6 +96,7 @@ const MainCont = () => {
                     
             </div> 
             </div>
+            {/* типо футера, мб нужно будет поменять и будет продолжение страницы */}
             <div className={s.bottom}>
                     <p>Didn`t find the one you looking for?</p>
                     <button>Suggest more</button>

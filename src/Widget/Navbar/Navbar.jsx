@@ -1,5 +1,8 @@
 import s from "./Navbar.module.scss";
 
+
+// навбар который при наведении подсвечивается
+
 const Navbar = () => {
     return <div className={s.link_block}>
                 <a href="/">Movies</a>

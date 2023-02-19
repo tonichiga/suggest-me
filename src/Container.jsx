@@ -1,5 +1,5 @@
 import { Header } from "./Widget";
-import Layout from "./Widget/Layout/Layout";
+
 import MainCont from "./Widget/MainCont/MainCont";
 
 const Container = () => {
@@ -7,7 +7,7 @@ const Container = () => {
     <div className="container">
       <Header /> 
       <MainCont/>
-      {/* <Layout/> */}
+     
     </div>
   );
 };
