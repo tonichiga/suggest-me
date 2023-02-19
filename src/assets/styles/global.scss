@@ -11,3 +11,9 @@ ul{
 li{
     list-style: none;
 }
+
+.container {
+    background-color: #121829;
+    background-image: url(../../assets/images/image.png);
+    backdrop-filter: blur(20px);
+}

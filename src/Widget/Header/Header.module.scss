@@ -17,7 +17,7 @@
 
 
 .nav{
-  cursor: pointer;
+
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -34,6 +34,7 @@
 
 .a:hover{
   color: #a8a5e8;
+  cursor: pointer;
 }
 
 .nav a{

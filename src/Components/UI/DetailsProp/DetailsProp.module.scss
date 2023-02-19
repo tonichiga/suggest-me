@@ -1,0 +1,26 @@
+.detail_prop {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  & > span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #767e94;
+    margin-right: 8px;
+  }
+
+  & span:last-child {
+    width: 295px;
+    height: 32px;
+    font-style: normal;
+    font-weight: 190;
+    font-size: 20px;
+    line-height: 32px;
+    color: #C3C8D4;
+      }
+
+}
+
+
