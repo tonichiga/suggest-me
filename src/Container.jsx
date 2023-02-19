@@ -1,3 +1,4 @@
+import Router from "./Components/Router/Router";
 import { Details } from "./Pages";
 import { Header } from "./Widget";
 
@@ -6,7 +7,9 @@ const Container = () => {
     <div className="container">
       <Header />
       {/* <Home/> */}
-      <Details />
+      {/* <Details /> */}
+
+      <Router />
     </div>
   );
 };

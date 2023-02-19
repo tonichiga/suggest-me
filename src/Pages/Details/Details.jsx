@@ -2,8 +2,12 @@ import { DetailsTitle } from "../../Components/UI";
 import DetailsProp from "../../Components/UI/DetailsProp/DetailsProp";
 import s from "./Details.module.scss";
 import posterImg from "../../assets/images/poster.jpeg";
+import { useParams } from "react-router-dom";
 
 const Details = () => {
+  const navigate = useParams();
+
+  console.log(navigate);
   return (
     <div className={s.details_container}>
       <DetailsTitle />
