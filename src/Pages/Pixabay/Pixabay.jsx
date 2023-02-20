@@ -20,7 +20,7 @@ const Pixabay = () => {
         };
 
         useEffect(() => {
-            getImages("dog");
+            getImages("flowers");
 
             return () => {
                 console.log("Unmount component");
