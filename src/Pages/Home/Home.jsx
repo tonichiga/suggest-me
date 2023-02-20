@@ -1,8 +1,8 @@
+import { Link } from "react-router-dom";
 import Card from "../../Widget/Card/Card";
 import InputRadio from "../../Widget/InputRadio/InputRadio";
 import Title from "../../Widget/Title/Title";
 import s from "./Home.module.scss";
-import { Link } from "react-router-dom";
 
 const data = [
   {

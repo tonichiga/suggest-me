@@ -1,6 +1,10 @@
 .logo_container {
   display: flex;
   align-items: center;
+
+  & > a {
+    text-decoration: none;
+  }
 }
 
 .text_logo {
