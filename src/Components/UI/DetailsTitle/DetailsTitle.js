@@ -2,7 +2,7 @@ import React from 'react';
 import s from './DetailsTitle.module.css'
 function DetailsTitle(props) {
     return (
-        <div className="all">
+        <div className={s.all}>
 
            <div className={s.image}>
            </div>
