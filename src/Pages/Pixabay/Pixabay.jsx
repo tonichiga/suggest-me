@@ -37,8 +37,6 @@ const Pixabay = () => {
     }, 1000);
   };
 
-  console.log("Images :", images);
-
   return (
     <div className={s.pixabay_container}>
       <input onChange={handleChange} />
