@@ -11,6 +11,7 @@ const Header = () => {
 
             <div className={styles.menu}>
               <div className={styles.tablets}>
+                  <Link to="pixabay">Pixabay</Link>
                   <a href="#">Movies</a>
                   <a href="#">TV Shows</a>
               </div>
