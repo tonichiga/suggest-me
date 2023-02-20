@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ButtonMain from "../../Components/UI/ButtonMain/ButtonMain";
 import Card from "../../Widget/Card/Card";
 import InputRadio from "../../Widget/InputRadio/InputRadio";
@@ -71,7 +72,9 @@ const MainContainer = () => {
                     {data.map((item) => {
                         return (
                         <li key={item.id}>
+                          <Link to={`details/${item.id}`}>
                             <Card data={item} />
+                            </Link>
                         </li>
                         );
                     })}
