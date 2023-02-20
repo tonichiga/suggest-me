@@ -18,18 +18,21 @@ const data = [
         title: "Shang Chi",
         rate: 9.1,
         img: sc,
+        about: "Drama, Action | 2020",
     },
     {
         id: 3,
         title: "Loki",
         rate: 5.5,
         img: l,
+        about: "Drama, Action | 2020",
     },
     {
         id: 4,
         title: "How I Met Your Mother",
         rate: 3.6,
         img: mom,
+        about: "Drama, Action | 2020",
 
     },
     {
@@ -37,6 +40,7 @@ const data = [
         title: "Money Heist",
         rate: 7.2,
         img: mh,
+        about: "Drama, Action | 2020",
 
     },
     {
@@ -51,6 +55,7 @@ const data = [
         title: "The Big Bang Theory",
         rate: 6.8,
         img: tb,
+        about: "Drama, Action | 2020",
 
     },
     {
@@ -58,6 +63,7 @@ const data = [
         title: "Two And a Half Men",
         rate: 7.4,
         img: tm,
+        about: "Drama, Action | 2020",
 
     },
 ]

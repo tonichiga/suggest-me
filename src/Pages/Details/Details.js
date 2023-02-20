@@ -1,10 +1,21 @@
-import React from 'react';
+import React, {useMemo, useState} from 'react';
 import DetailsTitle from "../../Components/UI/DetailsTitle/DetailsTitle";
 import s from './Details.module.scss'
 import poster from './marvel.png'
 import Rate from "../../Components/UI/Rate/Rate";
 import DetailsProp from "../../Components/UI/DetailsProp/DetailsProp";
-function Details(props) {
+import data from "../Home/data";
+import {useParams} from "react-router-dom";
+function Details() {
+    const [movies, _] = useState(data)
+
+    const params = useParams()
+
+    const movie = useMemo(() => {
+        return movies.find((item) => item.id === Number(params.id));
+    }, [movies, params]);
+
+
     return (
         <div className={s.details_container}>
         <DetailsTitle/>
@@ -12,18 +23,23 @@ function Details(props) {
                 <img src={poster} alt="poster" />
                 <div className={s.second_content}>
 
-                <h1 className={s.h1}>Part of the journey is the end.</h1>
+                <h1 className={s.h1}>{movie.title}</h1>
                 <p className={s.description}> After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos.
                     With the help of remaining allies, the Avengers must assemble once more in order to undo
                     Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.</p>
                     <div className={s.prop_list}>
-                        <DetailsProp isRate={true} label={"Rate"} value={"7.8"} />
+                        {/*<DetailsProp isRate={true} label={"Rate"} value={"7.8"} />*/}
+                        <DetailsProp isRate={true} label={"Rate"} value={movie.rate} />
                         <DetailsProp label={"Type"} value={"Movie"} />
                         <DetailsProp label={"Release Date"} value={"2019-04-24"} />
                         <DetailsProp label={"Run time"} value={"181 min"} />
+                        {/*<DetailsProp*/}
+                        {/*    label={"Genres"}*/}
+                        {/*    value={"Adventure,  Science Fiction, Action"}*/}
+                        {/*/>*/}
                         <DetailsProp
                             label={"Genres"}
-                            value={"Adventure,  Science Fiction, Action"}
+                            value={movie.about}
                         />
                     </div>
                     {/*<div className={s.rate}>*/}

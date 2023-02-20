@@ -1,11 +1,15 @@
 import styles from "./Header.module.scss";
 import icon from "../../assets/images/icon.svg";
+import {Link} from "react-router-dom";
 const Header = () => {
   return (
 
       <div  className={styles.header}>
 
-          <img className={styles.svg} src={icon} alt="logo"/>
+            <Link to={"/"}>
+                <img className={styles.svg} src={icon} alt="logo"/>
+            </Link>
+
 
           <header className={styles.header}></header>
 
