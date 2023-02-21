@@ -1,9 +1,9 @@
 import styles from "./DetailsTitle.module.scss";
 
-const DetailsTitle = () => {
+const DetailsTitle = ({ data }) => {
     return <div className={styles.title_block}>
               <a>Action</a>
-              <h1>Avengers: Endgame</h1>
+        <h1>{data.title}</h1>
            </div>
 }
 

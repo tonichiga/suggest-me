@@ -6,6 +6,7 @@ import TextGenre from "../../Components/UI/TextGenreAmount/TextGenre";
 import Card from "../../Components/UI/Card/Card";
 import QuestionSearch from "../../Components/UI/QuestionSearch/Question";
 import PurpleButton from "../../Components/UI/Button/Button";
+import { Link } from "react-router-dom";
 
 import WidowImage from "../../assets/images/Black_widow.jpg";
 import LokiImage from "../../assets/images/Loki.jpg";
@@ -16,25 +17,6 @@ import FriendsImage from "../../assets/images/Friends.jpg";
 import BigBangImage from "../../assets/images/BigBang.jpg";
 import TwoMenImage from "../../assets/images/TwoMen.jpg";
 
-/*const arrayGenerator = (length) => {
-  let array = [];
-  for (let i = 1; i <= length; i++) {
-    array.push(i);
-  }
-  return array;
-};
-
-const Layout = () => {
-  const mockData = arrayGenerator(10);
-
-    return (
-    <div className={styles.layout}>
-      {mockData.map((element) => {
-        return <Card data={element} />;
-      })}
-    </div>
-  );
-};*/
 
 const data = [
     {
@@ -97,7 +79,9 @@ const Home = () => {
                 {data.map((item) => {
                     return (
                         <div key={item.id}>
-                            <Card data={item} />
+                            <Link to={`details/${item.id}`}>
+                                <Card data={item} />
+                            </Link>
                         </div>
                     );
                 })}
