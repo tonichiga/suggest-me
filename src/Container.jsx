@@ -1,6 +1,7 @@
 // import Home from "./Pages/Home/Home";
 import { Header } from "./Widget";
-import {Details} from "./Pages";
+// import {Details} from "./Pages";
+import Router from "./Components/Router/Router";
 
 
 
@@ -9,7 +10,9 @@ const Container = () => {
     <div className="container">
       <Header /> 
       {/* <Home/> */}
-     <Details/>
+     {/* <Details/> */}
+     <Router/>
+
     </div>
   );
 };

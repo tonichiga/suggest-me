@@ -1,7 +1,8 @@
 import HeadTitle from "../../Widget/HeadTitle/HeadTitle";
 import s from "./Home.module.scss" ;
 import Input from "../../Components/UI/Input/Input";
-import { Card} from "../../Widget";
+import { Card } from "../../Widget";
+import { Link } from "react-router-dom";
 
 
 
@@ -83,8 +84,19 @@ const Home = () => {
             <div className={s.any}>
                     Any <span>(120)</span>
                 </div>
+                <ul className={s.list}>
+                    {data.map((item) => {
+                        return (
+                        <li key={item.id}>
+                          <Link to={`details/${item.id}`}>
+                            <Card data={item} />
+                            </Link>
+                        </li>
+                        );
+                    })}
+                </ul>
                 {/* карточки с фильмами */}
-            <div className={s.card_wrapper}>
+            {/* <div className={s.card_wrapper}>
                         {data.map((item) => {
                             return (
                                 <div key={item.id}>
@@ -92,7 +104,7 @@ const Home = () => {
                                 </div>
                             );
                         })}
-                    </div>
+                    </div> */}
                     
             </div> 
             </div>
