@@ -1,14 +1,17 @@
-import { Details, Home } from "./Pages";
-import { Header} from "./Widget";
-
+import Router from "./Components/Router/Router";
+// import { Details, Home } from "./Pages";
+import { Header } from "./Widget";
 
 const Container = () => {
-  return (
-    <div className="container">
-          <Header />
-          <Details />
-    </div>
-  );
+    return (
+        <div className="container">
+            <Header />
+            {/* <Home/> */}
+            {/* <Details /> */}
+            <Router />
+        </div>
+    );
 };
 
 export default Container;
+

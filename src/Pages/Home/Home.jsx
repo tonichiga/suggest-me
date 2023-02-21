@@ -4,6 +4,7 @@ import InputRadio from "../../Widget/InputRadio/InputRadio";
 import Card from "../../Widget/Card/Card";
 import Button from "../../Components/UI/Button/Button";
 import Text from "../../Components/UI/Text/Text";
+import { Link } from "react-router-dom";
 
 
 import WidowPoster from "../../assets/Images/WidowPoster.svg";
@@ -82,7 +83,9 @@ const Home = () => {
                 {data.map((item) => {
                     return (
                         <li key={item.id}>
-                            <Card data={item} />
+                            <Link to={`details/${item.id}`}>
+                                <Card data={item} />
+                            </Link>
                         </li>
                     );
                 })}
