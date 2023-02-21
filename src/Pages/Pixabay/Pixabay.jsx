@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import s from "./Pixabay.module.scss";
+import style from "../../assets/styles/global.scss";
 
-const API_KEY = "19788052-12e74352d9c3069c5841e3f0b";
+const API_KEY = "33820634-ed077e12e4cbb046d502a8152";
 
 const Pixabay = () => {
     const [images, setImages] = useState([]);
@@ -38,6 +39,7 @@ const Pixabay = () => {
     };
 
     return (
+        <div className={style.container}>
         <div className={s.pixabay_container}>
             <input onChange={handleChange} />
             <ul className={s.list}>
@@ -49,6 +51,7 @@ const Pixabay = () => {
                     );
                 })}
             </ul>
+        </div>
         </div>
     );
 };
