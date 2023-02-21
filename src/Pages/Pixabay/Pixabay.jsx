@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import s from "./Pixabay.module.scss";
 
-// const API_KEY = "19788052-12e74352d9c3069c5841e3f0b";
+const API_KEY = "19788052-12e74352d9c3069c5841e3f0b";
 
 const Pixabay = () => {
     const [images, setImages] = useState([]);

@@ -9,7 +9,6 @@ import { useMemo, useState } from "react";
 import Avengers from "../../assets/Images/Avengers.svg";
 import AvengersPoster from "../../assets/Images/AvengersPoster.svg";
 
-
 import WidowPoster from "../../assets/Images/WidowPoster.svg";
 import ChiPoster from "../../assets/Images/ChiPoster.svg";
 import LokiPoster from "../../assets/Images/LokiPoster.svg";
@@ -82,10 +81,10 @@ const data = [
 
 const Details = () => {
 
-const [movies, _] = useState(data);
+    const [movies, _] = useState(data);
 
     const params = useParams();
-    m
+
     const movie = useMemo(() => {
         return movies.find((item) => item.id === Number(params.id));
     }, [movies, params]);
