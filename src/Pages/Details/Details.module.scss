@@ -1,13 +1,13 @@
 .layout_wrapper {
     //max-width: 1600px;
-    background-image: url(../../assets/images/Background.svg);
+    /*background-image: url(../../assets/images/Background.svg);
     backdrop-filter: blur(20px);
-    background-color: #121829;
+    background-color: #121829;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 900px;
-    background-size: cover;
+    /*background-size: cover;*/
 
     .layout_block {
         display: flex;
