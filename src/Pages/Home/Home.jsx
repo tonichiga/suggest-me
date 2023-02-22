@@ -1,54 +1,57 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ButtonMain from "../../Components/UI/ButtonMain/ButtonMain";
 import Card from "../../Widget/Card/Card";
 import InputRadio from "../../Widget/InputRadio/InputRadio";
 import s from "./Home.module.scss";
 
-const data = [
-    {
-      id: 1,
-      title: "GREYHOUND",
-      rate: 4,
-    },
-    {
-      id: 2,
-      title: "Black Widow",
-      rate: 9,
-    },
-    {
-      id: 3,
-      title: "ONCE UPON A TIME",
-      rate: 5.5,
-    },
-    {
-      id: 4,
-      title: "GREYHOUND",
-      rate: 3.6,
-    },
-    {
-      id: 5,
-      title: "LITTLE WOMEN ",
-      rate: 7,
-    },
-    {
-      id: 6,
-      title: "Shang Chi",
-      rate: 9,
-    },
-    {
-      id: 7,
-      title: "Friends",
-      rate: 6.5,
-    },
-    {
-      id: 8,
-      title: "Loki",
-      rate: 7.4,
-    },
-  ];
-  
+const API_URL = "https://practice-api-vlasenko-bohdan.onrender.com/movie/list";
 
 const MainContainer = () => {
+
+  const [movies, setMovies] = useState([]);
+  const [inputValue, setInputValue] = useState("Any");
+
+  const getMovies = async () => {
+    try {
+      const response = await fetch(API_URL);
+      const data = await response.json();
+      setMovies(data);
+    } catch (error) {
+      console.log("Catch error :", error);
+    }
+  }
+
+  useEffect (() => {
+    getMovies();
+  }, []);
+
+
+
+  const getMoviesForQuery = async (value) => {
+    try {
+      const response = await fetch(
+        `https://practice-api-vlasenko-bohdan.onrender.com/movie/list?genre=${value}`
+      );
+      const data = await response.json();
+
+      setMovies(data);
+    } catch (error) {
+      console.log("Catch error :", error);
+    }
+  };
+
+  useEffect(() => {
+    getMovies();
+  }, []);
+
+  const handleInput = (e) => {
+    const value = e.target.id;
+    setInputValue(value);
+
+    getMoviesForQuery(value);
+  };
+
     return <div className={s.main}>
       <div className={s.content}>
                 <div className={s.main_header}>
@@ -61,18 +64,18 @@ const MainContainer = () => {
                         <br />
                         Give it a try and see what the algorithm suggests for you 😉</span>
 
-                        <InputRadio />
+                        <InputRadio onChange={handleInput} value={inputValue} />
                 </div>
             <div className={s.main_footer}>
                 <div className={s.category_main}>
-                    <span className={s.category}>Any</span>
-                    <span className={s.num_category}>(120)</span>
+                    <span className={s.category}>{inputValue}</span>
+                    <span className={s.num_category}>(8)</span>
                 </div>
                 <ul className={s.list}>
-                    {data.map((item) => {
+                    {movies.map((item) => {
                         return (
-                        <li key={item.id}>
-                          <Link to={`details/${item.id}`}>
+                        <li key={item._id}>
+                          <Link to={`details/${item._id}`}>
                             <Card data={item} />
                             </Link>
                         </li>
