@@ -1,11 +1,11 @@
 import React, {useMemo, useState} from 'react';
 import DetailsTitle from "../../Components/UI/DetailsTitle/DetailsTitle";
 import s from './Details.module.scss'
-import poster from './marvel.png'
 import Rate from "../../Components/UI/Rate/Rate";
 import DetailsProp from "../../Components/UI/DetailsProp/DetailsProp";
 import data from "../Home/data";
 import {useParams} from "react-router-dom";
+import newposter from './newposter7.jpg'
 function Details() {
     const [movies, _] = useState(data)
 
@@ -20,7 +20,7 @@ function Details() {
         <div className={s.details_container}>
         <DetailsTitle/>
             <div className={s.content}>
-                <img src={poster} alt="poster" />
+                <img  src={newposter} alt="poster"  />
                 <div className={s.second_content}>
 
                 <h1 className={s.h1}>{movie.title}</h1>

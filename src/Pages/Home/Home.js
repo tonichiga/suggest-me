@@ -6,7 +6,7 @@ import s from './Home.module.scss'
 import Card from "../../Widget/Card/Card";
 import data from './data'
 import Footer from "../../Widget/Footer/Footer";
-
+import {Link} from "react-router-dom";
 
 
 const MainContainer = () => {
@@ -23,9 +23,9 @@ const MainContainer = () => {
                 <ul className={s.list} >
                     {data.map((item) => {
                         return (
-                            <li key={item.title}>
+                            <Link to={`details/${item.id}`}>
                                 <Card data={item}  />
-                            </li>
+                            </Link>
                         );
                     })}
                 </ul>
