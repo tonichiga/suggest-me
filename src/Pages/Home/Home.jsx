@@ -25,7 +25,7 @@ const Home = () => {
     const getMoviesForQuery = async (value) => {
         try {
             const response = await fetch(
-                `https://practice-lib.onrender.com/movie/list?genres=${value}`
+                `https://practice-lib.onrender.com/movie/list/${value}`
             );
             const data = await response.json();
 
