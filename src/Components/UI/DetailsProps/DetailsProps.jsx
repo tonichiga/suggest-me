@@ -1,7 +1,7 @@
 import s from "./DetailsProps.module.scss";
 import Star from "../Star/Star";
 
-const DetailsProps = ({ isStar, label, value }) => {
+const DetailsProps = ({ isRate, label, value }) => {
     if (!value) return null;
 
     return (
