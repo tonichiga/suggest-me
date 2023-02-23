@@ -1,13 +1,18 @@
 {
   "files": {
-    "main.css": "/suggest-me/static/css/main.07b48b97.css",
-    "main.js": "/suggest-me/static/js/main.872e2f24.js",
-    "index.html": "/suggest-me/index.html",
-    "main.07b48b97.css.map": "/suggest-me/static/css/main.07b48b97.css.map",
-    "main.872e2f24.js.map": "/suggest-me/static/js/main.872e2f24.js.map"
+    "main.css": "/mr-Maksim0001k/suggest-me/static/css/main.ac99c9f0.css",
+    "main.js": "/mr-Maksim0001k/suggest-me/static/js/main.1eb44c52.js",
+    "static/media/Background.png": "/mr-Maksim0001k/suggest-me/static/media/Background.3546b6d1971b1283d83e.png",
+    "static/media/Frame 65.svg": "/mr-Maksim0001k/suggest-me/static/media/Frame 65.2e21818c8cab7b2f8b55.svg",
+    "static/media/star.svg": "/mr-Maksim0001k/suggest-me/static/media/star.9c6becae3eca2c90d542fb4b22937bb3.svg",
+    "index.html": "/mr-Maksim0001k/suggest-me/index.html",
+    "static/media/icon.svg": "/mr-Maksim0001k/suggest-me/static/media/icon.17f36e0fd204052cd881844e9e9a905f.svg",
+    "static/media/arrow-right.svg": "/mr-Maksim0001k/suggest-me/static/media/arrow-right.43fe417a2e2fc018f459ebab4764920d.svg",
+    "main.ac99c9f0.css.map": "/mr-Maksim0001k/suggest-me/static/css/main.ac99c9f0.css.map",
+    "main.1eb44c52.js.map": "/mr-Maksim0001k/suggest-me/static/js/main.1eb44c52.js.map"
   },
   "entrypoints": [
-    "static/css/main.07b48b97.css",
-    "static/js/main.872e2f24.js"
+    "static/css/main.ac99c9f0.css",
+    "static/js/main.1eb44c52.js"
   ]
 }
