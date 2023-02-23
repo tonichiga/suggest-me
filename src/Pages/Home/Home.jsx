@@ -57,7 +57,7 @@ const Home = () => {
                     <Input onChange={handleInput} value={inputValue}/>
                 </div>
                 <div className={style.list_info}>
-                    Any <span>(120)</span>
+                    {inputValue}
                 </div>
                 <ul className={style.list}>
                     {movies.map((item) => {
