@@ -1,10 +1,10 @@
 import s from "./NameFilm.module.scss";
 
-const NameFilm = () => {
+const NameFilm = ({title, category}) => {
     return ( 
         <div className={s.name_film}>
-                        <span className={s.category}>Action</span>
-                        <h1 className={s.film}>Avengers: Endgame</h1>
+                        <span className={s.category}>{category}</span>
+                        <h1 className={s.film}>{title}</h1>
         </div>
      );
 }

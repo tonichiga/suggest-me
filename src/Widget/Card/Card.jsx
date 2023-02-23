@@ -2,13 +2,16 @@ import s from "./Card.module.scss";
 import Rate from "../../Components/Rate/Rate";
 
 const Card = ({data}) => {
-    return <div className={s.card_block}>
-        <img src={data.background} alt="Card_photo" />
+    console.log(data);
+    return (
+    <div className={s.card_block}>
+        <img src={data.poster} alt="Card_photo" />
         <p>{data.title}</p>
         <div className={s.rate_position}>
-        <Rate rate={data.rate} />
+        <Rate rate={Number(data.rating).toFixed(1)} />
         </div>
            </div>
-}
+    );
+};
 
 export default Card;

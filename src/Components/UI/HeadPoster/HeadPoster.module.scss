@@ -1,9 +1,13 @@
 .head_poster {
-    width: 1200px;
-    height: 480px;
+    width: 900px;
+    height: 300px;
     border-radius: 40px;
-    background: linear-gradient(180deg, rgba(54, 44, 146, 0.4) 0%, rgba(18, 98, 151, 0.4) 100%), 
-    url(../../../assets/head_posret/avengers.png);
-    background-size: cover;
+    background: linear-gradient(180deg, rgba(54, 44, 146, 0.4) 0%, rgba(18, 98, 151, 0.4) 100%);
+    overflow: hidden;
+    // url(../../../assets/head_posret/avengers.png);
+    // background-size: cover;
 
+}
+.head_poster img{
+    max-width: 100%;
 }

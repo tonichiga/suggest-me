@@ -1,8 +1,10 @@
 import s from "./HeadPoster.module.scss";
 
-const HeadPoster = () => {
+const HeadPoster = ({backdrop}) => {
     return ( 
-    <div className={s.head_poster}> </div>
+    <div className={s.head_poster}>
+        <img src={backdrop} alt="" />
+         </div>
         
     );
 }
