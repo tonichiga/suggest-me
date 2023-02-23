@@ -1,11 +1,13 @@
 import s from "./DetailsProps.module.scss";
+import Star from "../Star/Star";
 
+const DetailsProps = ({ isStar, label, value }) => {
+    if (!value) return null;
 
-const DetailsProps = ({ label, value }) => {
     return (
-        <div className={s.DetailsProp}>
+        <div className={s.detail_prop}>
             <span>{label}</span>
-            <span>{value}</span>
+            {isRate ? <Star rate={value} /> : <span>{value}</span>}
         </div>
     );
 }
