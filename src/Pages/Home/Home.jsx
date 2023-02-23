@@ -59,7 +59,7 @@ const Home = () => {
             <ul className={s.list}>
                 {movies.map((item) => {
                     return (
-                        <li key={item.id}>
+                        <li key={item._id}>
                             <Link to={`details/${item._id}`}>
                                 <Card data={item} />
                             </Link>
