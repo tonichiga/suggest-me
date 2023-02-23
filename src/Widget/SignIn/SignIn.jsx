@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 
 
 async function loginUser(credentials) {
-    return fetch('http://localhost:3000/login', {
+    return fetch('https://practice-api-vlasenko-bohdan.onrender.com/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -31,6 +31,10 @@ const SignIn = ({ setToken }) => {
         setToken(token);
       }
 
+    SignIn.propTypes = {
+      setToken: PropTypes.func.isRequired
+    };
+
     return ( 
         <form onSubmit={handleSubmit} className={s.form_login}>
             <div className={s.span_login}>
@@ -48,9 +52,5 @@ const SignIn = ({ setToken }) => {
         </form>
      );
 }
-
-SignIn.propTypes = {
-    setToken: PropTypes.func.isRequired
-};
  
 export default SignIn;
