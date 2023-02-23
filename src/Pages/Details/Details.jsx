@@ -1,9 +1,8 @@
 import s from "./Details.module.scss";
-import Star from "../../Components/UI/Star/Star";
 import DetailsProps from "../../Components/UI/DetailsProps/DetailsProps";
 import Block from "../../Components/UI/Block/Block";
 import { useParams } from "react-router-dom";
-import { useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 
 
 
@@ -50,26 +49,26 @@ const Details = () => {
 
     return <div className={s.MainContainer}>
         <div className={s.layout_block}>
-            <div><img src={movie.poster} className={s.poster} alt="Poster" /></div>
+            <div><img src={movie.backdrop} className={s.poster} alt="Poster" /></div>
 
             <div className={s.AboutFilm}>
                 <Block />
 
             <div className={s.details_block}>
-                <img src={AvengersPoster} alt="Avenger" />
+                <img src={movie.poster} alt="Avenger" className={s.smallposter} />
                 <div className={s.props_block}>
                         <p className={s.title}>{movie.tagline}</p>
                         <p className={s.Paragraph}>{movie.description}</p>
-                        <DetailsProp
+                        <DetailsProps
                             isRate={true}
                             label={"Rate"}
                             value={movie.rating?.toFixed(1)}
                         />
-                        <DetailsProps label={"Type"} value={movie.type} />
-                        <DetailsProps label={"Release Date"} value={getStringDate(movie.date)} />
-                    <DetailsProps label={"Run time"} value={"181 min"} />
+                        <DetailsProps label={"Type:"} value={movie.type} />
+                        <DetailsProps label={"Release Date:"} value={getStringDate(movie.date)}  />
+                    <DetailsProps label={"Run time:"} value={movie.runtime}  />
                     <DetailsProps
-                        label={"Genres"}
+                        label={"Genres:"}
                             value={getStringGenres(movie.genres)}
                     />
                 </div>
