@@ -50,10 +50,10 @@ const Details = () => {
     return <div className={s.MainContainer}>
         <div className={s.layout_block}>
             <div><img src={movie.backdrop} className={s.poster} alt="Poster" /></div>
-
             <div className={s.AboutFilm}>
-                <Block />
-
+            <div className={s.Block}>
+                <Block genres={getStringGenres(movie.genres)} title={movie.title}  />
+            </div>
             <div className={s.details_block}>
                 <img src={movie.poster} alt="Avenger" className={s.smallposter} />
                 <div className={s.props_block}>
