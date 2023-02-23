@@ -28,7 +28,7 @@ const Home = () => {
     const getMovies = async () => {
         try {
             const response = await fetch(
-                `https://cogitize-practice-suggest.onrender.com/movie/list`
+                    `https://cogitize-practice-suggest.onrender.com/movie/list`
             );
             const data = await response.json();
 
