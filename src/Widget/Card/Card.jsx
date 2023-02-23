@@ -5,9 +5,9 @@ const Card = ({ data }) => {
   return (
       <div className={style.card}>
           <div>
-            <img className={style.image} src={data.image} alt="img"/>
+            <img className={style.image} src={data.poster} alt="poster"/>
               <div className={style.rate_pos}>
-                <Rate rate={data.rate} />
+                <Rate rate={data.rating.toFixed(1)} />
               </div>
           </div>
           <div>
