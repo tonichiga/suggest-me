@@ -4,10 +4,10 @@ import Rate from "../Rate/Rate";
 
 const Card = ({data}) => {
     return <div className={styles.card_block}>
-        <img src={data.background} alt="Card_photo" />
+        <img src={data.poster} alt="Card_photo" />
         <p>{data.title}</p>
         <div className={styles.rate_style}>
-                <Rate rate={data.rate} />
+                <Rate rate={data.rating} />
             </div>
            </div>
 }

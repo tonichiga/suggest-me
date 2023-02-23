@@ -7,8 +7,9 @@ import Card from "../../Components/UI/Card/Card";
 import QuestionSearch from "../../Components/UI/QuestionSearch/Question";
 import PurpleButton from "../../Components/UI/Button/Button";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
-import WidowImage from "../../assets/images/Black_widow.jpg";
+/*import WidowImage from "../../assets/images/Black_widow.jpg";
 import LokiImage from "../../assets/images/Loki.jpg";
 import ShangChiImage from "../../assets/images/ShangChi.jpg";
 import MotherImage from "../../assets/images/Mother.jpg";
@@ -16,70 +17,62 @@ import HeistImage from "../../assets/images/Heist.jpg";
 import FriendsImage from "../../assets/images/Friends.jpg";
 import BigBangImage from "../../assets/images/BigBang.jpg";
 import TwoMenImage from "../../assets/images/TwoMen.jpg";
+*/
 
-
-const data = [
-    {
-        id: 1,
-        title: "Black Widow",
-        background: WidowImage,
-        rate: 6.8,
-    },
-    {
-        id: 2,
-        title: "Shang Chi",
-        background: ShangChiImage,
-        rate: 7.9,
-    },
-    {
-        id: 3,
-        title: "Loki",
-        background: LokiImage,
-        rate: 8.4,
-    },
-    {
-        id: 4,
-        title: "How I Met Your Mother",
-        background: MotherImage,
-        rate: 8.3,
-    },
-    {
-        id: 5,
-        title: "Money Heist",
-        background: HeistImage,
-        rate: 8.3,
-    },
-    {
-        id: 6,
-        title: "Friends",
-        background: FriendsImage,
-        rate: 8.8,
-    },
-    {
-        id: 7,
-        title: "The Big Bang Theory",
-        background: BigBangImage,
-        rate: 8.1,
-    },
-    {
-        id: 8,
-        title: "Two And a Half Men",
-        background: TwoMenImage,
-        rate: 7,
-    },
-];
 
 const Home = () => {
+
+    const [movies, setMovies] = useState([]);
+    const [inputValue, setInputValue] = useState("Any");
+
+    const getMovies = async () => {
+        try {
+            const response = await fetch(
+                `https://cogitize-practice-suggest.onrender.com/movie/list`
+            );
+            const data = await response.json();
+
+            setMovies(data);
+        } catch (error) {
+            console.log("Catch error :", error);
+        }
+    };
+
+    const getMoviesForQuery = async (value) => {
+        try {
+            const response = await fetch(
+                `https://cogitize-practice-suggest.onrender.com/movie/list?category=${value}`
+            );
+            const data = await response.json();
+
+            setMovies(data);
+        } catch (error) {
+            console.log("Catch error :", error);
+        }
+    };
+
+    useEffect(() => {
+        getMovies();
+    }, []);
+
+    const handleInput = (e) => {
+        const value = e.target.id;
+        setInputValue(value);
+
+        getMoviesForQuery(value);
+    };
+        
+
     return <div className={styles.layout_wrapper}>
         <div className={styles.layout_block}>
             <Title />
-            <Input />
+            <Input onChange={handleInput} value={inputValue} />
             <TextGenre />
             <div className={styles.card_wrapper}>
-                {data.map((item) => {
+                {movies.map((item) => {
                     return (
-                        <div key={item.id}>
-                            <Link to={`details/${item.id}`}>
+                        <div key={item._id}>
+                            <Link to={`details/${item._id}`}>
                                 <Card data={item} />
                             </Link>
                         </div>

@@ -4,11 +4,11 @@ import Rate from "../../Components/UI/Rate/Rate";
 import DetailsProps from "../../Components/UI/DetailsProps/DetailsProps";
 import DetailsTitle from "../../Components/UI/DetailsTitle/DetailsTitle";
 import { useParams } from "react-router-dom";
-import { useMemo, useState } from "react";
+import { useState,useEffect } from "react";
 
 
 /*Image import*/
-import AvengersPoster from "../../assets/images/Avengers_poster.jpg";
+/*import AvengersPoster from "../../assets/images/Avengers_poster.jpg";
 import AvengersImage from "../../assets/images/Avengers.jpg";
 import WidowImage from "../../assets/images/Black_widow.jpg";
 import LokiImage from "../../assets/images/Loki.jpg";
@@ -17,12 +17,12 @@ import MotherImage from "../../assets/images/Mother.jpg";
 import HeistImage from "../../assets/images/Heist.jpg";
 import FriendsImage from "../../assets/images/Friends.jpg";
 import BigBangImage from "../../assets/images/BigBang.jpg";
-import TwoMenImage from "../../assets/images/TwoMen.jpg";
+import TwoMenImage from "../../assets/images/TwoMen.jpg";*/
 ////////////////////////////////////////
 
 
 
-const data = [
+/*const data = [
     {
         id: 1,
         title: "Black Widow",
@@ -72,42 +72,66 @@ const data = [
         rate: 7,
     },
 ];
-
+*/
 
 const Details = () => {
-
-    const [movies, _] = useState(data);
+    //eslint-disable-next-line
+    const [movie, setMovie] = useState({});
 
     const params = useParams();
 
-    const movie = useMemo(() => {
-        return movies.find((item) => item.id === Number(params.id));
-    },[movies,params]);
+    useEffect(() => {
+        const getMovie = async () => {
+            try {
+                const response = await fetch(
+                    `https://cogitize-practice-suggest.onrender.com/movie/${params.id}`
+                );
+                const data = await response.json();
 
+                setMovie(data);
+            } catch (error) {
+                console.log(error);
+            }
+        };
+
+        getMovie();
+    }, [params]);
+
+    const getStringGenres = () => {
+        return movie.genres?.map((genre) => genre.name).join(", ");
+    };
+
+    const getStringDate = (movieDate) => {
+        let string = "";
+
+        if (!movieDate) {
+            return string;
+        }
+
+        const date = new Date(movieDate);
+        string = `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`;
+
+        return string;
+    };
+
+    
     return <div className={styles.layout_wrapper}>
         <div className={styles.layout_block}>
-            <div className={styles.poster_block}><img src={AvengersPoster} className={styles.poster} alt="Poster" /></div>
+            <div className={styles.poster_block}><img src={movie.backdrop} className={styles.poster} alt="Poster" /></div>
             <div className={styles.details_block}>
-                <img className={styles.detailImage } src={movie.background} alt="Images" />
+                <img className={styles.detailImage } src={movie.poster} alt="Images" />
                 <div className={styles.props_block}>
-                    <p className={styles.title}>Part of the journey is the end.</p>
-                    <p className={styles.subtitle}>
-                        After the devastating events of Avengers: Infinity War, the universe
-                        is in ruins due to the efforts of the Mad Titan, Thanos. With the
-                        help of remaining allies, the Avengers must assemble once more in
-                        order to undo Thanos' actions and restore order to the universe once
-                        and for all, no matter what consequences may be in store.
-                    </p>
-                    <Rate rate={movie.rate} />
-                        <DetailsProps label={"Type"} value={"Movie"} />
-                        <DetailsProps label={"Release Date"} value={"2019-04-24"} />
-                        <DetailsProps label={"Run time"} value={"181 min"} />
+                    <p className={styles.title}>{movie.tagline}</p>
+                    <p className={styles.subtitle}>{movie.description}</p>
+                    <Rate rate={movie.rating} /> 
+                    <DetailsProps label={"Type"} value={movie.type} />
+                    <DetailsProps label={"Release Date"} value={getStringDate(movie.date)} />
                         <DetailsProps
                             label={"Genres"}
-                            value={"Adventure,  Science Fiction, Action"}
+                            value={getStringGenres(movie.genres)}
                         />
                 </div>
-                <div className={styles.title_absolute}><DetailsTitle data={movie} /></div>
+                <div className={styles.title_absolute}><DetailsTitle genres={getStringGenres(movie.genres)} title={movie.title} /></div>
             </div>
         </div>
     </div>

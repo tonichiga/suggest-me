@@ -1,9 +1,10 @@
 import styles from "./DetailsTitle.module.scss";
 
-const DetailsTitle = ({ data }) => {
+const DetailsTitle = ({genres,title}) => {
+    
     return <div className={styles.title_block}>
-              <a>Action</a>
-        <h1>{data.title}</h1>
+        <a>{genres}</a>
+        <h1>{title}</h1>
            </div>
 }
 

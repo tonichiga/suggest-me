@@ -6,8 +6,7 @@
     border-radius: 12px;
     display: flex;
     gap: 2px;
-
-    .input_block {
+    .input_container {
         input {
             display: none;
         }
@@ -33,4 +32,11 @@
             color: #ebe9fe;
         }
     }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
