@@ -15,8 +15,10 @@ const Header = () => {
                   <a href="#">TV Shows</a>
               </div>
                 <div className={styles.suggest}>
-                  <a href="#">Suggest me</a>
+                  <Link to="login">
+                  <span>Suggest me</span>
                   <img src={arrow} alt="arrow" />
+                  </Link>
                 </div>
             </div>
         </header>;
