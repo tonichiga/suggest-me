@@ -8,9 +8,11 @@ import {useParams} from "react-router-dom";
 import {useEffect} from "react";
 function Details() {
     const [movies, setMovies] = useState({})
+    const [isLoading, setIsLoading] = useState(false);
+
     const params = useParams()
 
-    useEffect (() => {
+    useEffect(() => {
         const getMovie = async () => {
             try {
                 const response = await fetch(
@@ -23,6 +25,8 @@ function Details() {
                 console.log(movies.genres[0].name);
             } catch (error) {
                 console.log(error);
+            } finally {
+                setIsLoading(false)
             }
         };
 
@@ -33,9 +37,9 @@ function Details() {
     const getStringGenres = () => {
         let strGenre = movies.genres?.map((item) => item.name).join(", ");
         return strGenre
-        console.log('str',strGenre);
+        console.log('str', strGenre);
     };
-    console.log(getStringGenres(),'hi');
+    console.log(getStringGenres(), 'hi');
 
     const getStringDate = (movieDate) => {
         let string = "";
@@ -51,30 +55,37 @@ function Details() {
     };
     // console.log(movies?.genres[0].name);
     return (
-        <div className={s.details_container}>
-        <DetailsTitle backdrop={movies.backdrop} title={movies.title} genres={getStringGenres(movies.genres)} />
-            <div className={s.content}>
-                <img  src={movies.poster} alt="poster"  />
-                <div className={s.second_content}>
+        <>
+            {isLoading ? (
+                <h1 style={{fontSize:'300px'}}>is Loading...</h1>
+            ) : (
+                <div className={s.details_container}>
+                    <DetailsTitle backdrop={movies.backdrop} title={movies.title}
+                                  genres={getStringGenres(movies.genres)}/>
+                    <div className={s.content}>
+                        <img src={movies.poster} alt="poster"/>
+                        <div className={s.second_content}>
 
-                <h1 className={s.h1}>{movies.title}</h1>
-                <p className={s.description}> {movies.description}</p>
-                    <div className={s.prop_list}>
-                        <DetailsProp isRate={true} label={"Rate"} value={movies.rate?.toFixed(1)} />
-                        <DetailsProp label={"Type"} value={movies.type} />
-                        <DetailsProp label={"Release Date"} value={getStringDate(movies.date)} />
-                        <DetailsProp label={"Run time"} value={movies.runtime} />
+                            <h1 className={s.h1}>{movies.title}</h1>
+                            <p className={s.description}> {movies.description}</p>
+                            <div className={s.prop_list}>
+                                <DetailsProp isRate={true} label={"Rate"} value={movies.rate?.toFixed(1)}/>
+                                <DetailsProp label={"Type"} value={movies.type}/>
+                                <DetailsProp label={"Release Date"} value={getStringDate(movies.date)}/>
+                                <DetailsProp label={"Run time"} value={movies.runtime}/>
 
-                        <DetailsProp
-                            label={"Genres"}
-                            value={getStringGenres(movies.genres)}
-                        />
+                                <DetailsProp
+                                    label={"Genres"}
+                                    value={getStringGenres(movies.genres)}
+                                />
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-        </div>
-    );
+                </div>
+            )}
+        </>
+    )
 }
 
 export default Details;

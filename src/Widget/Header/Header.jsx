@@ -15,7 +15,7 @@ const Header = () => {
 
               <div className={styles.nav}>
                   {/*<a className={styles.a}>Movies</a>*/}
-                  <Link to="pixabay">Pixabay</Link>
+                  <Link to="pixabay" className={styles.a}>Pixabay</Link>
                   <a className={styles.a}>TV Shows</a>
                   <a className={styles.a}>Suggest me →</a>
               </div>

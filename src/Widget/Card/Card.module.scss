@@ -13,7 +13,8 @@
 
 
   &:hover {
-    transform: scale(1.03);
+    transform: scale(1.05);
+
   }
 
   & .image {
@@ -22,6 +23,12 @@
     border-radius: 8px;
 
   }
+
+
+}
+
+.card:hover{
+    background: rgba(66, 79, 119, 0.8);
 }
 
 .rate_container {
@@ -57,7 +64,10 @@
   flex: none;
   order: 0;
   flex-grow: 0;
+
 }
+
+
 
 .card_footer{
   margin-top: 20px;
