@@ -9,7 +9,11 @@
 
   .details_container {
     max-width: 1017px;
-
+    & img {
+      width: 480px;
+      height: 720px;
+      border-radius: 24px;
+    }
   }
 
 @media only screen and (min-width: 2500px) {
@@ -112,7 +116,6 @@
   .type {
     width: 39px;
     height: 24px;
-    /*font-family: 'Poppins';*/
     font-style: normal;
     font-weight: 270;
     font-size: 16px;
@@ -130,7 +133,6 @@
   .movie {
     width: 59px;
     height: 32px;
-    /*font-family: 'Poppins';*/
     font-style: normal;
     font-weight: 270;
     font-size: 20px;
@@ -151,7 +153,6 @@
   .date {
     width: 109px;
     height: 24px;
-    /*font-family: 'Poppins';*/
     font-style: normal;
     font-weight: 270;
     font-size: 16px;
@@ -164,7 +165,6 @@
   .date_number {
     width: 300px;
     height: 32px;
-    /*font-family: 'Poppins';*/
     font-style: normal;
     font-weight: 270;
     font-size: 20px;
@@ -176,7 +176,6 @@
     width: 91px;
     height: 24px;
 
-    /*font-family: 'Poppins';*/
     font-style: normal;
     font-weight: 270;
     font-size: 16px;
@@ -189,7 +188,6 @@
   .run_time {
     width: 90px;
     height: 32px;
-    /*font-family: 'Poppins';*/
     font-style: normal;
     font-weight: 270;
     font-size: 20px;
@@ -224,7 +222,6 @@
   .genres_list {
     width: 440px;
     height: 32px;
-    /*font-family: 'Poppins';*/
     font-weight: 270;
     font-style: normal;
     font-size: 20px;

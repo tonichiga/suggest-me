@@ -4,13 +4,13 @@ const Card = ({ data }) => {
   return (
 
     <div className={style.card}>
-        <img className={style.image} src={data.img} alt="poster" />
+        <img className={style.image} src={data.poster} alt="poster" />
         <div className={style.card_footer}>
             <span className={style.card_title}>{data.title}</span>
         </div>
 
         <div className={style.rate_container}>
-            <Rate rate={data.rate} />
+            <Rate rate={data.rating.toFixed(1)} />
         </div>
     </div>
   );

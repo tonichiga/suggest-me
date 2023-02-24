@@ -39,28 +39,16 @@
 }
 
 .film_name{
-    width: 39px;
+
     height: 16px;
-
-    /* Body/Extra Small */
-
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    /* identical to box height, or 133% */
-
     display: flex;
     align-items: center;
-
-    /* Primary/200 */
-
     color: #BEB7FB;
-
-
-    /* Inside auto layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
