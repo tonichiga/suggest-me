@@ -1,7 +1,4 @@
 .MainContainer {
-    background-image: url(../../assets/Images/Background.png);
-    backdrop-filter: blur(20px);
-    background-color: #121829;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,12 +42,12 @@
                 flex-direction: column;
                 align-self: flex-start;
                 gap: 22px;
-                color:white;
+                color:#C3C8D4;
 
                 .title {
                     font-weight: 700;
                     font-size: 24px;
-                    color: whitesmoke;
+                    color: #EBEEF5;
                 }
 
                 .Paragraph {

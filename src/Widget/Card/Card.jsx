@@ -6,7 +6,7 @@ const Card = ({ data }) => {
         <div className={style.card}>
             <img className={style.image} src={data.poster} alt="poster" />
             <div className={style.card_footer}>
-                <span className={style.card_title}>{data.title}</span>
+                <p >{data.title}</p>
             </div>
             <div className={style.rate_container}>
                 <Star rate={data.rating.toFixed(1)} />

@@ -55,7 +55,10 @@ const Home = () => {
         <div className={s.MainContainer}>
             <Info />
             <InputRadio onChange={handleInput} value={inputValue} />
-            <Text />
+             <div className={s.MainText}>
+                    <span className={s.Category}>{inputValue}</span>
+                    <span className={s.CategoryNum}>(8)</span>
+                </div>
             <ul className={s.list}>
                 {movies.map((item) => {
                     return (

@@ -1,6 +1,4 @@
 .MainContainer {
-        background-image: url(../../assets/Images/Background.png);
-        background-color: #121829;
         justify-content: center;
 }
 
@@ -31,5 +29,27 @@ p {
     font-size: 20px;
     line-height: 32px;
     text-align: center;
+    color: #767E94;
+}
+.MainText {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left:140px;
+}
+
+.Category {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    color: #767E94;
+}
+
+.CategoryNum {
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
     color: #767E94;
 }
