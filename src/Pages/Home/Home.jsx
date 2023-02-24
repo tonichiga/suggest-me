@@ -58,6 +58,7 @@ const Home = () => {
     const handleInput = (e) => {
         const value = e.target.id;
         setInputValue(value);
+        console.log(value);
 
         getMoviesForQuery(value);
     };

@@ -1,6 +1,6 @@
 .header {
     position: fixed;
-    top: 0;
+    top: 0px;
     display: flex;
     justify-content: space-between;
     padding: 0px 152px 0px 156px;
@@ -9,5 +9,5 @@
     width: 100%;
     z-index: 1;
     background: rgba(18, 24, 41, 0.8);
-    backdrop-filter: blur(20px);
+    //backdrop-filter: blur(20px);
 }
