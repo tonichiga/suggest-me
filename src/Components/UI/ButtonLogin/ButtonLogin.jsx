@@ -1,8 +1,8 @@
 import s from "./ButtonLogin.module.scss";
 
-const ButtonLogin = () => {
+const ButtonLogin = ({handleLogin}) => {
     return ( 
-        <button className={s.button_login} >Login</button>
+        <button className={s.button_login} onClick={handleLogin} >Login</button>
      );
 }
  
