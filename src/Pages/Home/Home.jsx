@@ -3,45 +3,54 @@ import Info from "../../Widget/Info/Info";
 import InputRadio from "../../Widget/InputRadio/InputRadio";
 import Card from "../../Widget/Card/Card";
 import Button from "../../Components/UI/Button/Button";
-import Text from "../../Components/UI/Text/Text";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-
+const API_URL = 'https://practice-suggest-me.onrender.com/movie/list'
 
 const Home = () => {
 
-    const [movies, setMovies] = useState([]);
+     const [movie, setMovie] = useState([]);
     const [inputValue, setInputValue] = useState("Any");
-
-    const getMovies = async () => {
+    const [loading, setLoading]  = useState(true)
+    const getMovie = async () => {
         try {
-            const response = await fetch(
-                `https://cogitize-practice-suggest.onrender.com/movie/list`
-            );
+            const response = await fetch(API_URL);
             const data = await response.json();
-
-            setMovies(data);
+            setMovie(data);
         } catch (error) {
             console.log("Catch error :", error);
         }
-    };
+        finally {
+            setLoading(false)
+        }
+    }
+
+    useEffect (() => {
+        getMovie();
+    }, []);
+
+
 
     const getMoviesForQuery = async (value) => {
         try {
             const response = await fetch(
-                `https://cogitize-practice-suggest.onrender.com/movie/list?category=${value}`
+                `https://cogitize-practice-suggest.onrender.com/movie/list?genre=${value}`
             );
             const data = await response.json();
 
-            setMovies(data);
+            setMovie(data);
         } catch (error) {
             console.log("Catch error :", error);
+        }
+        finally
+        {
+            setLoading(false)
         }
     };
 
     useEffect(() => {
-        getMovies();
+        getMovie();
     }, []);
 
     const handleInput = (e) => {
@@ -50,6 +59,7 @@ const Home = () => {
 
         getMoviesForQuery(value);
     };
+
 
     return (
         <div className={s.MainContainer}>
@@ -60,7 +70,7 @@ const Home = () => {
                     <span className={s.CategoryNum}>(8)</span>
                 </div>
             <ul className={s.list}>
-                {movies.map((item) => {
+                {movie.map((item) => {
                     return (
                         <li key={item._id}>
                             <Link to={`details/${item._id}`}>
@@ -72,7 +82,7 @@ const Home = () => {
             </ul>
             <div className={s.LastButton}>
                 <h3 className={s.LastMessage}>Didn’t find the one you looking for?</h3>
-                <Button />
+                <button id="suggestBtn">Suggest more</button>
             </div>
         </div>
 
