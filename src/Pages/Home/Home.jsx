@@ -6,11 +6,11 @@ import Button from "../../Components/UI/Button/Button";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const API_URL = 'https://practice-suggest-me.onrender.com/movie/list'
+const API_URL = 'https://cogitize-practice-suggest.onrender.com/movie/list'
 
 const Home = () => {
 
-     const [movie, setMovie] = useState([]);
+    const [movie, setMovie] = useState([]);
     const [inputValue, setInputValue] = useState("Any");
     const [loading, setLoading]  = useState(true)
     const getMovie = async () => {
@@ -59,6 +59,8 @@ const Home = () => {
 
         getMoviesForQuery(value);
     };
+
+
 
 
     return (
