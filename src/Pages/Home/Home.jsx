@@ -47,6 +47,19 @@ const Home = () => {
         getMoviesForQuery(value);
     };
 
+    useEffect(() => {
+        document.getElementById("suggestBtn").addEventListener(
+            "click",
+            () => {
+                loadNewMovies()
+            }
+        )
+        getMoviesForQuery("Any");
+    }, []);
+    const loadNewMovies = () => {
+        getMoviesForQuery("Any")
+    };
+
 
 
     return (
@@ -72,7 +85,7 @@ const Home = () => {
                 </ul>
                 <div className={style.bottom}>
                     <div>Didin’t find the one you looking for?</div>
-                    <button>Suggest more</button>
+                    <button id="suggestBtn">Suggest more</button>
                 </div>
 
             </div>

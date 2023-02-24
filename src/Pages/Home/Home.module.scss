@@ -65,7 +65,7 @@ ul{
   align-items: flex-start;
   padding: 40px;
   gap: 8px;
-  position: absolute;
+  position: relative;
   width: 560px;
   height: 144px;
   left: 235px;
@@ -102,4 +102,8 @@ ul{
   & > div:not(:last-child) {
     margin-bottom: 24px;
   }
+}
+
+button {
+  cursor: pointer;
 }
