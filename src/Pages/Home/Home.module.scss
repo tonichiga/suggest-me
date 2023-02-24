@@ -1,15 +1,13 @@
 .MainContainer {
         justify-content: center;
+        .list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 24px;
+            width: 100%;
+        }
 }
-
-.list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    justify-content: center;
-    width:100%;
-}
-
 p {
     color: #767E94;
     text-align: center;
@@ -75,48 +73,4 @@ button {
     line-height: 40px;
     letter-spacing: -0.02em;
     color: #767E94;
-}
-@media only screen and (min-width: 1600px){
-  .list{
-    margin-left: 100px;
-  }
-
-}
-@media only screen and (min-width: 1700px){
-  .list{
-  margin-left: 140px;
-  }
-}
-
-@media only screen and (min-width: 1800px){
-  .list{
-    margin-left: 180px;
-  }
-}
-
-
-@media only screen and (min-width: 1900px){
-  .list{
-    margin-left: 240px;
-  }
-}
-
-
-@media only screen and (min-width: 3000px){
-      .list{
-    margin-left: 800px;
-  }
-}
-
-@media only screen and (min-width: 4000px){
-  .list{
-    margin-left: 1280px;
-  }
-}
-
-
-@media only screen and (min-width: 5000px){
-  .list{
-    margin-left: 1790px;
-  }
 }
