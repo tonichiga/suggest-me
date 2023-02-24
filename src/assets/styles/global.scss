@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: #121829;
+  background-image: url("../../assets/images/background.svg");
+  background-size: cover;
+  backdrop-filter: blur(20px);
+  padding-top: 103px;
+  padding-bottom: 56px;
+  min-height: 100vh;
+}
