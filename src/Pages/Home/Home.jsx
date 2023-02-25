@@ -7,7 +7,7 @@ import Input from "../../Widget/Input/Input";
 
 const Home = () => {
     const [movies, setMovies] = useState([]);
-    const [inputValue, setInputValue] = useState("Any");
+    let [inputValue, setInputValue] = useState("Any");
 
     const getMovies = async () => {
         try {
@@ -43,24 +43,12 @@ const Home = () => {
     const handleInput = (e) => {
         const value = e.target.id;
         setInputValue(value);
-
         getMoviesForQuery(value);
     };
 
-    useEffect(() => {
-        document.getElementById("suggestBtn").addEventListener(
-            "click",
-            () => {
-                loadNewMovies()
-            }
-        )
-        getMoviesForQuery("Any");
-    }, []);
-    const loadNewMovies = () => {
-        getMoviesForQuery("Any")
+    const handleSuggestBtnClick = (value) => {
+        getMoviesForQuery(value);
     };
-
-
 
     return (
         <div className={style.container}>
@@ -85,7 +73,7 @@ const Home = () => {
                 </ul>
                 <div className={style.bottom}>
                     <div>Didin’t find the one you looking for?</div>
-                    <button id="suggestBtn">Suggest more</button>
+                    <button id="suggestBtn" onClick={() => handleSuggestBtnClick(inputValue)}>Suggest more</button>
                 </div>
 
             </div>
