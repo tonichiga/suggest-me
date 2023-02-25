@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="dc347c68-1646-4c54-8006-5240711e74b6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Home/Home.jsx" afterDir="false" />
     </list>
-=======
-    <list default="true" id="16df9ed1-08bd-486d-a25c-33f2fed07e09" name="Changes" comment="" />
->>>>>>> parent of fb478c00 (Updates)
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +15,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Pages/Home/Home.jsx" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -57,11 +56,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-<<<<<<< HEAD
       <changelist id="dc347c68-1646-4c54-8006-5240711e74b6" name="Changes" comment="" />
-=======
-      <changelist id="16df9ed1-08bd-486d-a25c-33f2fed07e09" name="Changes" comment="" />
->>>>>>> parent of fb478c00 (Updates)
       <created>1676628407311</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -79,10 +74,7 @@
       <workItem from="1677243658178" duration="1007000" />
       <workItem from="1677244772604" duration="22000" />
       <workItem from="1677244809233" duration="2538000" />
-<<<<<<< HEAD
       <workItem from="1677314590402" duration="4198000" />
-=======
->>>>>>> parent of fb478c00 (Updates)
     </task>
     <servers />
   </component>
