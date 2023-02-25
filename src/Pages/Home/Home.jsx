@@ -72,7 +72,7 @@ const Home = () => {
                     })}
                 </ul>
                 <div className={style.bottom}>
-                    <div>Didin’t find the one you looking for?</div>
+                    <div>Didn’t find the one you looking for?</div>
                     <button id="suggestBtn" onClick={() => handleSuggestBtnClick(inputValue)}>Suggest more</button>
                 </div>
 
