@@ -7,7 +7,7 @@ import Input from "../../Widget/Input/Input";
 
 const Home = () => {
     const [movies, setMovies] = useState([]);
-    let [inputValue, setInputValue] = useState("Any");
+    const [inputValue, setInputValue] = useState("Any");
 
     const getMovies = async () => {
         try {
