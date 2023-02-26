@@ -1,0 +1,30 @@
+@import url(./_fonts.scss);
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
+    url(../../assets/images/background.jpeg);
+  background-size: cover;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
